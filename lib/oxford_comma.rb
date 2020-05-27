@@ -4,9 +4,8 @@ def oxford_comma(array)
   elsif array.size === 2 
     array.join(' and ')
   else 
-    
+    last = array.pop 
     fruits = array.join(', ')
-    
     "#{fruits} and #{last}"
   end
 end
